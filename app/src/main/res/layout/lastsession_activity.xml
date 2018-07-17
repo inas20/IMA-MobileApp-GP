@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentlight2"
+    android:orientation="vertical">
+
+
+    <!--<include-->
+        <!--android:id="@+id/app_bar"-->
+        <!--layout="@layout/navigation_action"-->
+         <!--/>-->
+
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView3"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_below="@+id/app_bar"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="21dp"-->
+    <!--android:visibility="visible" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:alpha="0.2"
+        android:background="@color/colorAccentlight2"
+        android:foreground="@drawable/skincare"
+
+
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/LastImageView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="27dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/diseaseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/LastImageView"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="42dp"
+            android:text="Disease"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/AreaView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/diseaseView"
+            android:layout_below="@+id/diseaseView"
+            android:layout_marginTop="35dp"
+            android:text="Area"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ColorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/AreaView"
+            android:layout_below="@+id/AreaView"
+            android:layout_marginTop="38dp"
+            android:text="Color"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textureView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ColorView"
+            android:layout_below="@+id/ColorView"
+            android:layout_marginTop="42dp"
+            android:text="Texture"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/NotesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textureView"
+            android:layout_below="@+id/textureView"
+            android:layout_marginTop="43dp"
+            android:text="Notes"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/diseaseView"
+            android:text="TextView"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_alignEnd="@+id/LastImageView"
+            android:layout_toEndOf="@+id/CameraBtn"
+            android:layout_alignStart="@+id/color_progress_bar" />
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:id="@+id/area_progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="195dp"
+            android:visibility="invisible"
+            app:max="100"
+            app:ringColor="@color/colorAccent"
+            app:ringProgressColor="@color/colorAccentDark"
+            app:ringWidth="3dp"
+            app:style="STROKE"
+            app:textColor="@color/colorPrimaryDark"
+            app:textIsShow="true"
+            app:textSize="16sp" />
+
+        <io.netopen.hotbitmapgg.library.view.RingProgressBar
+            android:id="@+id/color_progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="336dp"
+            android:layout_marginLeft="195dp"
+            android:visibility="invisible"
+            app:max="100"
+            app:ringColor="@color/colorAccent"
+            app:ringProgressColor="@color/colorAccentDark"
+            app:ringWidth="3dp"
+            app:style="STROKE"
+            app:textColor="@color/colorPrimaryDark"
+            app:textIsShow="true"
+            app:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/disease"
+            android:layout_alignTop="@+id/AreaView"
+            android:text="TextView"
+            android:visibility="invisible"
+            android:layout_toEndOf="@+id/CameraBtn"
+            android:layout_alignStart="@+id/color_progress_bar" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView29"
+            android:layout_alignTop="@+id/ColorView"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textureView"
+            android:layout_alignEnd="@+id/notes"
+            android:layout_alignStart="@+id/area_progress_bar"
+            android:text="TextView"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/LastImageView"
+            android:layout_alignStart="@+id/disease"
+            android:layout_alignTop="@+id/NotesView"
+            android:text="TextView"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ObjectsFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/NotesView"
+            android:layout_below="@+id/NotesView"
+            android:layout_marginTop="28dp"
+            android:text="Objects Found"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" /><![CDATA[
+
+        android:layout_alignStart="@+id/disease"
+            android:visibility="invisible" />
+
+
+        ]]>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/CameraBtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="233dp"
+            android:layout_marginTop="230dp"
+            android:alpha="50"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/photocamera" />
+
+        <TextView
+            android:id="@+id/startAnaylsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AreaView"
+            android:layout_toEndOf="@+id/ObjectsFound"
+            android:text="Start Analysis"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/objects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/notes"
+            android:layout_alignStart="@+id/notes"
+            android:layout_alignTop="@+id/ObjectsFound"
+            android:text="TextView"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

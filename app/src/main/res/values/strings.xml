@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">IMA Skin Care</string>
+    <string name="title_activity_patient_form">Patient_form</string>
+    <string name="title_activity_doctor_form">Doctor_form</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="vitiligo" />
+    <string name="tinea" />
+    <string name="diseases2" />
+    <string name="todo" />
+    <string name="user_information">User Information</string>
+    <string name="add_your_info">Add your info</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in_as_doctor">sign in as doctor</string>
+    <string name="sign_in_as_patient">Sign in as Patient</string>
+    <string name="changed_with">changed with %</string>
+    <string name="objects_found">Objects found</string>
+    <string name="area">Area</string>
+    <string name="no_of_objects">no of objects</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="notes">Notes</string>
+    <string name="dr_notes">Dr notes</string>
+    <string name="start_analysis">Start Analysis</string>
+    <string name="ima_skin_care">IMA Skin Care</string>
+    <string name="view_user_information">View User Information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="add">ADD</string>
+    <string name="first_enter_username">First Enter Username</string>
+    <string name="username">Username</string>
+</resources>

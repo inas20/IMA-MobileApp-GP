@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/UsernameField"
+        android:layout_alignBottom="@+id/UsernameField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PhoneField"
+        android:layout_alignBottom="@+id/PhoneField"
+        android:layout_alignStart="@+id/textView13"
+        android:text="Phone"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/UsernameField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EmailField" />
+
+    <TextView
+        android:id="@+id/EmailField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/UsernameField"
+        android:layout_alignStart="@+id/PhoneField" />
+
+    <TextView
+        android:id="@+id/PhoneField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="37dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/EmailField"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EmailField"
+        android:layout_alignBottom="@+id/EmailField"
+        android:layout_alignStart="@+id/textView15"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"/>
+        <!--android:layout_alignBottom="@+id/GenderField"/>-->
+
+    <TextView
+        android:id="@+id/GenderField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignStart="@+id/PhoneField" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Status"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/StatusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignEnd="@+id/GenderField"
+        android:layout_alignStart="@+id/GenderField" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="BirthDate"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/DateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignStart="@+id/StatusField"
+        android:layout_alignEnd="@+id/StatusField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_marginTop="34dp"
+        android:text="History"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/historyField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignStart="@+id/DateField" />
+</RelativeLayout>

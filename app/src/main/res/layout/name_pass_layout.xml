@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentlight2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Name_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/patient_name"
+        android:layout_alignEnd="@+id/passwordView" />
+
+    <Button
+        android:id="@+id/Nxt_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:background="@color/colorAccentLight"
+        android:text="Next"
+        android:textColor="@color/colorAccentDark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="87dp"
+        android:layout_above="@+id/Nxt_Btn"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="84dp"
+        android:layout_above="@+id/passwordView"
+        android:layout_alignStart="@+id/patient_pass" />
+
+    <EditText
+        android:id="@+id/patient_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/passwordView"
+        android:layout_alignBottom="@+id/passwordView"
+        android:layout_alignStart="@+id/Nxt_Btn" />
+
+    <TextView
+        android:id="@+id/changeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/patient_name"
+        android:layout_alignStart="@+id/patient_name"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="56dp" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentlight2"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/NewEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:visibility="visible"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/PhoneView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/EmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/NewEmail2"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:text="Email"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PhoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PhoneNumber"
+        android:layout_alignBottom="@+id/PhoneNumber"
+        android:layout_alignStart="@+id/EmailView"
+        android:text="Phone"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/AgeNumber"
+        android:layout_alignStart="@+id/NewEmail2" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="66dp"
+        android:background="@color/colorAccentLight"
+        android:text="Submit"
+        android:textColor="@color/colorAccentDark"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/patientNameView"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:id="@+id/AgeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PhoneView"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:text="Age"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/AgeNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/AgeView"
+        android:layout_alignBottom="@+id/AgeView"
+        android:layout_alignStart="@+id/spinner_gender" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PhoneView"
+        android:layout_below="@+id/AgeNumber"
+        android:layout_marginTop="29dp"
+        android:text="Gender"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_alignEnd="@+id/PhoneNumber" />
+
+    <Spinner
+        android:id="@+id/spinner_status"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/spinner_gender"
+        android:layout_alignStart="@+id/spinner_gender" />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner_status"
+        android:layout_alignStart="@+id/gender"
+        android:text="Status"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/patientNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/NewEmail2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="26dp"
+        android:text="Username"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:layout_marginStart="6dp"
+        android:layout_alignBottom="@+id/patientNameView"
+        android:layout_alignStart="@+id/NewEmail2" />
+
+
+</RelativeLayout>
